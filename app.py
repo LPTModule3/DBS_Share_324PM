@@ -1,17 +1,16 @@
 from flask import Flask, render_template, request
-
-flag = 1
-name = ""
 import google.generativeai as palm
 import replicate
 import os
+
+flag = 1
+name = ""
+
 
 makersuite_api = os.getenv("MAKERSUITE_API_TOKEN")
 palm.configure(api_key=makersuite_api) 
 
 model={"model":"models/chat-bison-001"}
-
-
 app = Flask(__name__)
 
 @app.route("/",methods=["GET","POST"])
