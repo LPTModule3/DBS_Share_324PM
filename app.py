@@ -12,10 +12,6 @@ palm.configure(api_key=makersuite_api)
 model={"model":"models/chat-bison-001"}
 
 
-os.environ["REPLICATE_API_TOKEN"] = "r8_CbQqTY2n5uTI977QwxtYhRYSfRUi9ki4CSiAO"
-
-
-
 app = Flask(__name__)
 
 @app.route("/",methods=["GET","POST"])
