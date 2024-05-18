@@ -5,9 +5,8 @@ name = ""
 import google.generativeai as palm
 
 makersuite_api = os.getenv("MAKERSUITE_API_TOKEN")
-##palm.configure(api_key=makersuite_api) 
+palm.configure(api_key=makersuite_api) 
 
-##palm.configure(api_key="AIzaSyBjLMTN5lI0Ru2Q580xn-Turw8fFR5U1tY") 
 model={"model":"models/chat-bison-001"}
 
 import replicate
