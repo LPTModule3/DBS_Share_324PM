@@ -3,14 +3,15 @@ from flask import Flask, render_template, request
 flag = 1
 name = ""
 import google.generativeai as palm
+import replicate
+import os
 
 makersuite_api = os.getenv("MAKERSUITE_API_TOKEN")
 palm.configure(api_key=makersuite_api) 
 
 model={"model":"models/chat-bison-001"}
 
-import replicate
-import os
+
 os.environ["REPLICATE_API_TOKEN"] = "r8_CbQqTY2n5uTI977QwxtYhRYSfRUi9ki4CSiAO"
 
 
