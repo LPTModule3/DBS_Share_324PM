@@ -12,7 +12,7 @@ model={"model":"models/chat-bison-001"}
 
 import replicate
 import os
-##os.environ["REPLICATE_API_TOKEN"] = "r8_CbQqTY2n5uTI977QwxtYhRYSfRUi9ki4CSiAO"
+os.environ["REPLICATE_API_TOKEN"] = "r8_CbQqTY2n5uTI977QwxtYhRYSfRUi9ki4CSiAO"
 
 
 
